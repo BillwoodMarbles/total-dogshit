@@ -10,6 +10,12 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-anchor: "anchor-web", sans-serif;
+  --color-yellow: #fabe5a;
+  --color-navy: #1c3557;
+  --color-coral: #f26a60;
+  --color-sky: #6dafe0;
+  --color-charcoal: #131313;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +29,9 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "anchor-web", sans-serif;
 }
