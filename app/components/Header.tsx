@@ -14,7 +14,7 @@ export default function Header() {
             className="w-20 h-20 md:w-28 md:h-28"
           />
         </Link>
-        <h1 className="font-anchor font-bold text-4xl md:text-5xl uppercase tracking-tight">
+        <h1 className="font-anchor font-bold text-4xl md:text-5xl uppercase tracking-tight leading-8">
           Total Dogshit
         </h1>
       </div>
