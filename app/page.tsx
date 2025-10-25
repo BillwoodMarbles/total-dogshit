@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Footer } from "./components/Footer";
 import Header from "./components/Header";
 
@@ -7,9 +8,18 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <section
-          className="bg-navy text-white py-20 border-b-8 border-charcoal px-4 md:px-8"
+          className="bg-navy text-white py-20 border-b-8 border-charcoal px-4 md:px-8 relative overflow-hidden"
           id="suggest-a-movie"
         >
+          <div className="flex items-center justify-center absolute top-[-70px] right-[-55px] md:top-[-130px] md:right-[-100px] z-0 opacity-20 motion-safe:animate-[spin_100s_linear_infinite]">
+            <Image
+              src="/flower-white.webp"
+              alt="Flower"
+              width={400}
+              height={400}
+              className="w-[300px] h-[300px] md:w-[400px] md:h-[400px]"
+            />
+          </div>
           <h2 className="mb-8 text-center text-5xl font-bold text-white uppercase tracking-tight">
             Suggest a Movie!
           </h2>
@@ -31,10 +41,19 @@ export default function Home() {
         </section>
 
         <section
-          className="bg-coral py-20 border-b-8 border-charcoal px-4 md:px-8"
+          className="bg-coral py-20 border-b-8 border-charcoal px-4 md:px-8 relative overflow-hidden"
           id="follow-us-on-spotify"
         >
-          <div className="mx-auto px-6 text-center">
+          <div className="flex items-center justify-center absolute top-[-150px] left-[-125px] z-0 opacity-30 motion-safe:animate-[spin-reverse_100s_linear_infinite]">
+            <Image
+              src="/flower-white.webp"
+              alt="Flower"
+              width={500}
+              height={500}
+            />
+          </div>
+
+          <div className="mx-auto px-6 text-center relative z-10">
             <h2 className="mb-12 text-center text-5xl font-bold text-charcoal uppercase tracking-tight">
               Follow us on Spotify!
             </h2>
