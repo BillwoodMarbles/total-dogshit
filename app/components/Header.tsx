@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className="bg-yellow text-charcoal py-4 px-4 md:py-8 md:px-8 border-b-8 border-charcoal shadow-[0px_8px_0px_0px_rgba(19,19,19,1)] flex items-center justify-center md:justify-between gap-8">
       <div className="flex items-center justify-center md:justify-start">
-        <Link href="/" className="mr-2 md:mr-3">
+        <Link href="/" className="mr-2 md:mr-3 flex items-center gap-3">
           <Image
             src="/tds_logo.svg"
             alt="Total Dogshit"
@@ -13,10 +13,10 @@ export default function Header() {
             height={100}
             className="w-20 h-20 md:w-28 md:h-28"
           />
+          <h1 className="font-anchor font-bold text-4xl md:text-5xl uppercase tracking-tight leading-8">
+            Total Dogshit
+          </h1>{" "}
         </Link>
-        <h1 className="font-anchor font-bold text-4xl md:text-5xl uppercase tracking-tight leading-8">
-          Total Dogshit
-        </h1>
       </div>
 
       <div className="flex items-center justify-center md:justify-end">
