@@ -64,10 +64,32 @@ export default function Home() {
                   data-testid="embed-iframe"
                   src="https://open.spotify.com/embed/show/6jqLzT9R5E1r5Tc7Be0H2T/video?utm_source=generator"
                   width="100%"
-                  height="351"
+                  height="350"
                   frameBorder="0"
                   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                   loading="lazy"
+                ></iframe>
+              </div>
+
+              <div className="mt-12">
+                <h2 className="mb-8 text-center text-3xl font-bold text-charcoal uppercase tracking-tight">
+                  (Also available on Apple Podcasts!)
+                </h2>
+              </div>
+
+              <div className="border-8 border-charcoal rounded-4xl shadow-[8px_8px_0px_0px_rgba(19,19,19,1)] overflow-hidden bg-white">
+                <iframe
+                  allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+                  title="Media player"
+                  frameBorder="0"
+                  height="450"
+                  style={{
+                    width: "100%",
+                    overflow: "hidden",
+                    borderRadius: "10px",
+                  }}
+                  sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+                  src="https://embed.podcasts.apple.com/us/podcast/total-dogsh-t/id1809003288?itscg=30200&amp;itsct=podcast_box_player&amp;ls=1&amp;mttnsubad=1809003288&amp;theme=auto"
                 ></iframe>
               </div>
             </div>
